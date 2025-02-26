@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Dark background for contrast */
+    margin: 0;
+    padding: 0;
+    font-size: 22px; /* Base font size increased */
+    color: white; /* All text set to white */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav img.logo {
+    width: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Leadership Section */
+#leadership {
+    text-align: center;
+    margin: 120px 20px;  /* Pushed further down */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#leadership h2 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#leadership p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+}
+
+/* Leadership Team */
+.leadership-team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.leader {
+    text-align: center;
+}
+
+.leader img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.leader p {
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.leader .role {
+    font-size: 20px;
+    color: blue;
+}
+
+.leader .email {
+    font-size: 18px;
+    color: #007BFF;
+    margin-top: 5px;
+}
+
+/* Small screens adjustments */
+@media screen and (max-width: 768px) {
+    .leadership-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leader {
+        margin-bottom: 20px;
+    }
+}
