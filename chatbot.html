@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot | AI Chat Bot & Grief Healing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+    <img class="logo" src="images/Everlight.png" alt="Logo" />
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chatbot.html">ChatBot</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Chat Application Container -->
+<div class="chat-app">
+    <!-- Chat Window (Left Column) -->
+    <div class="chat-window">
+        <div class="chat-header">
+            <h2 id="chatTitle">Select a Chat</h2>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Conversation messages will load here -->
+        </div>
+        <div class="chat-input">
+            <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your message..."
+                    onkeydown="if(event.key==='Enter') sendMessage()"
+            />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Chat List (Right Column) -->
+    <div class="chat-list">
+        <!-- New Chat Button -->
+        <div class="new-chat" onclick="createNewChat()">+</div>
+        <ul id="chatList">
+            <li onclick="loadChat('Chat 1')">Chat 1</li>
+            <li onclick="loadChat('Chat 2')">Chat 2</li>
+            <li onclick="loadChat('Chat 3')">Chat 3</li>
+            <li onclick="loadChat('Chat 4')">Chat 4</li>
+            <li onclick="loadChat('Chat 5')">Chat 5</li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/chatbot.js"></script>
+</body>
+</html>

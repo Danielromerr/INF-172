@@ -1,0 +1,245 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff4b2b;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #ff6b6b;
+}
+
+/* Chat Example Section */
+.chat-example {
+    position: relative;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb); /* Colorful background */
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    min-height: 600px; /* Increased height */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chat Container */
+.chat-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    height: auto; /* Adjust height dynamically */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: visible; /* Remove scrolling */
+}
+
+/* Chat Messages */
+.chat-message {
+    padding: 14px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* User Message */
+.chat-message.user {
+    background-color: #e0eafc;
+    color: black;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+}
+
+/* Bot Message */
+.chat-message.bot {
+    background-color: #6a82fb;
+    color: white;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+}
+
+
+/* Facts Section */
+.facts-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.facts-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #6a82fb;
+}
+
+.facts-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.facts-section li {
+    font-size: 22px; /* Increased font size */
+    padding: 12px 0;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.facts-section li:last-child {
+    border-bottom: none;
+}
+
+
+/* Common Challenges in Grief Section */
+.challenges-section {
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    padding: 40px;
+    text-align: center;
+}
+
+.challenges-section h2 {
+    font-size: 32px;
+    color: #6a82fb;
+    margin-bottom: 20px;
+}
+
+.challenge {
+    margin-bottom: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.challenge h3 {
+    font-size: 24px;
+    color: #fc5c7d;
+    margin-bottom: 8px;
+}
+
+.challenge p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    background-color: #f8f9fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.how-it-works-section h2 {
+    font-size: 32px;
+    color: #6a82fb;
+    margin-bottom: 20px;
+}
+
+.how-it-works-content p {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+/* Benefits of Talking About Grief Section */
+.benefits-section {
+    background-color: #f0f4f8;
+    padding: 40px;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 32px;
+    color: #6a82fb;
+    margin-bottom: 20px;
+}
+
+.benefits-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-section li {
+    font-size: 20px;
+    padding: 12px 0;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.benefits-section li:last-child {
+    border-bottom: none;
+}
+
+/* User Testimonials Section */
+.testimonials-section {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    color: #6a82fb;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 8px;
+    font-style: italic;
+    color: #888;
+}

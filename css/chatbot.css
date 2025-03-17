@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    margin: 0;
+    padding: 0;
+}
+
+/* Chat Application Layout */
+.chat-app {
+    display: flex;
+    margin-top: 80px; /* Space for fixed navbar */
+    height: calc(100vh - 80px);
+}
+
+/* Chat List (Left Column) */
+.chat-list {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    max-width: 200px;
+    overflow-y: auto;
+    order: -1;  /* This makes the chat list appear on the left */
+}
+
+.chat-list-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.chat-list-header button {
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.chat-list-header button:hover {
+    background-color: #0056b3;
+}
+
+.chat-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Chat Window (Right Column) */
+.chat-window {
+    flex: 3;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-header {
+    background: #6a82fb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-message {
+    padding: 8px;
+    margin: 5px;
+    max-width: 75%;
+    border-radius: 12px;
+    word-wrap: break-word;
+}
+
+.chat-message.user {
+    background-color: #6a82fb;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.chat-message.bot {
+    background-color: grey;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #6a82fb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #6a82fb;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .chat-app {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .chat-window, .chat-list {
+        max-width: 100%;
+    }
+
+    .chat-list {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
