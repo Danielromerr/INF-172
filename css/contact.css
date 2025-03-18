@@ -50,12 +50,14 @@ html, body {
 }
 
 .leader img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+    width: 160px; /* Adjust size as needed */
+    height: 160px;
+    border-radius: 0; /* Remove border-radius for square shape */
     object-fit: cover;
-    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; /* Ensure it's centered */
 }
+
 
 .leader p {
     margin-top: 10px;
